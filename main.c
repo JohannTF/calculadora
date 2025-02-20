@@ -61,4 +61,12 @@ void exponencial(){
         resultado *= num1;
     }
     printf("El resultado es: %d\n", resultado);
+    
+void resta(){
+    float a,b;
+    printf("Ingrese el primer numero: ");
+    scanf("%f",&a);
+    printf("Ingrese el segundo numero: ");
+    scanf("%f",&b);
+    printf("El resultado de la resta es: %f\n",a-b);
 }
