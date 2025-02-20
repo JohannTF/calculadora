@@ -24,6 +24,7 @@ int main() {
                 break;
             // Exponencial
             case 5:
+                exponencial();
                 break;
             // Modulo
             case 6:
@@ -35,7 +36,6 @@ int main() {
                 printf("Opción no válida.\n");
         }
     } while(opcion != 7);
-//gg
     return 0;
 }
 
@@ -50,11 +50,15 @@ void mostrarMenu() {
     printf("7. Salir\n");
 }
 
-void Exponencial(){
-    int num1, num2;
-    printf("Ingrese el primer numero: ");
+void exponencial(){
+    int num1, num2, resultado = 1;
+    printf("Ingrese el numero base: ");
     scanf("%d", &num1);
-    printf("Ingrese el segundo numero: ");
+    printf("Ingrese la potencia: ");
     scanf("%d", &num2);
-    printf("", num1*num2);
+    for (int i = 0; i < num2; i++)
+    {
+        resultado *= num1;
+    }
+    printf("El resultado es: %d\n", resultado);
 }
