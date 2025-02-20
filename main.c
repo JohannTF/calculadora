@@ -35,7 +35,7 @@ int main() {
                 printf("Opción no válida.\n");
         }
     } while(opcion != 7);
-
+//gg
     return 0;
 }
 
@@ -48,4 +48,13 @@ void mostrarMenu() {
     printf("5. Exponencial\n");
     printf("6. Modulo\n");
     printf("7. Salir\n");
+}
+
+void Exponencial(){
+    int num1, num2;
+    printf("Ingrese el primer numero: ");
+    scanf("%d", &num1);
+    printf("Ingrese el segundo numero: ");
+    scanf("%d", &num2);
+    printf("", num1*num2);
 }
