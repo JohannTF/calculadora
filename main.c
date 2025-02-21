@@ -78,3 +78,7 @@ void modulo() {
     resultado = num1 % num2;
     printf("El módulo es: %d\n", resultado);
 }
+
+void sumar(int a, int b){
+    return a + b;
+}
