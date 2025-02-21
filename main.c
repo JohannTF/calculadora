@@ -19,6 +19,7 @@ int main() {
                 break;
             // Multiplicar
             case 3:
+                multiplicar();
                 break;
             // Dividir
             case 4:
@@ -88,4 +89,16 @@ void sumar() {
     scanf("%d", &num2);
     resultado = num1 + num2;
     printf("La suma es: %d\n", resultado);
+}
+
+void multiplicar(){
+    int num1, num2, resultado;
+    printf("Ingrese el primer número: ");
+    scanf("%d", &num1);
+    printf("Ingrese el segundo número: ");
+    scanf("%d", &num2);
+    resultado = num1 + num2;
+    printf("La suma es: %d\n", resultado);
+    resultado = num1 * num2;
+    printf("La multiplicación es: %d\n", resultado);
 }
