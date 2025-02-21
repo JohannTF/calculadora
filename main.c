@@ -24,6 +24,7 @@ int main() {
                 break;
             // Dividir
             case 4:
+                Dividir();
                 break;
             // Exponencial
             case 5:
@@ -52,6 +53,22 @@ void mostrarMenu() {
     printf("5. Exponencial\n");
     printf("6. Modulo\n");
     printf("7. Salir\n");
+}
+
+void Dividir(){
+    int num1, num2;
+    printf("Ingrese numerador: ");
+    scanf("%d", &num1);
+    printf("Ingrese denominador: ");
+    scanf("%d", &num2);
+    if(num2==0){
+        printf("\nDivision por cero\n");
+    }
+    else{
+        float resultado = 1.0*num1 / num2;
+        printf("Resultado: %.2f",resultado);
+    }
+
 }
 
 void exponencial(){
