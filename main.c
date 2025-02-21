@@ -12,6 +12,7 @@ int main() {
         switch(opcion) {
             // Sumar
             case 1:
+                sumar();
                 break;
             // Restar
             case 2:
@@ -77,4 +78,14 @@ void modulo() {
     }
     resultado = num1 % num2;
     printf("El módulo es: %d\n", resultado);
+}
+
+void sumar() {
+    int num1, num2, resultado;
+    printf("Ingrese el primer número: ");
+    scanf("%d", &num1);
+    printf("Ingrese el segundo número: ");
+    scanf("%d", &num2);
+    resultado = num1 + num2;
+    printf("La suma es: %d\n", resultado);
 }
