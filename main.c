@@ -28,6 +28,7 @@ int main() {
                 break;
             // Modulo
             case 6:
+                modulo();
                 break;
             case 7:
                 printf("Saliendo...\n");
@@ -61,4 +62,19 @@ void exponencial(){
         resultado *= num1;
     }
     printf("El resultado es: %d\n", resultado);
+}
+
+void modulo() {
+    int num1, num2, resultado;
+    printf("Ingrese el primer número: ");
+    scanf("%d", &num1);
+    printf("Ingrese el segundo número el que será el divisor: ");
+    scanf("%d", &num2);
+    // Validar division entre cero
+    if (num2 == 0) {
+        printf("Error: No se puede dividir entre cero.\n");
+        return;
+    }
+    resultado = num1 % num2;
+    printf("El módulo es: %d\n", resultado);
 }
