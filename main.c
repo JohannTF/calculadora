@@ -105,6 +105,7 @@ void multiplicar(){
 
 }
 
+    
 void resta(){
     float a,b;
     printf("Ingrese el primer numero: ");
