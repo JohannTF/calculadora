@@ -103,28 +103,8 @@ void multiplicar(){
     printf("La multiplicación es: %d\n", resultado);
     
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
 void resta(){
     float a,b;
     printf("Ingrese el primer numero: ");
