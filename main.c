@@ -16,6 +16,7 @@ int main() {
                 break;
             // Restar
             case 2:
+                resta();
                 break;
             // Multiplicar
             case 3:
